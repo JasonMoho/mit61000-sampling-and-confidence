@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sampling & Confidence Intervals - Lecture Slides
 
-## Getting Started
+Interactive slides for teaching sampling distributions and confidence intervals using real astronomical data.
 
-First, run the development server:
+## Live Site
+
+**[View Slides →](https://jasonmoho.github.io/mit61000-sampling-and-confidence/)**
+
+## Topics Covered
+
+- **Sampling Variability** — Why different samples give different estimates
+- **Standard Error** — Measuring precision: SE = s / √n
+- **Central Limit Theorem** — Why sample means follow a normal distribution
+- **Confidence Intervals** — Quantifying uncertainty with 95% CIs
+- **The 68-95-99.7 Rule** — Understanding the normal distribution
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the slides.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Static files are exported to the `out/` directory.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This site is automatically deployed to GitHub Pages via GitHub Actions on push to `main`.
