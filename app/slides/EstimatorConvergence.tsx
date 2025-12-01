@@ -33,7 +33,7 @@ export default function EstimatorConvergence() {
 
   // Load star data
   useEffect(() => {
-    const basePath = process.env.NODE_ENV === 'production' ? '/mit61000-sampling-and-confidence' : '';
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
     fetch(`${basePath}/stars.json`)
       .then(res => res.json())
       .then((data: StarData) => {
