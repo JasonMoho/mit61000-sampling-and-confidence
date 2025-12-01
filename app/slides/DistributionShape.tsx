@@ -268,7 +268,8 @@ export default function DistributionShape() {
 
   // Load star data
   useEffect(() => {
-    fetch('/stars.json')
+    const basePath = process.env.NODE_ENV === 'production' ? '/mit61000-sampling-and-confidence' : '';
+    fetch(`${basePath}/stars.json`)
       .then(res => res.json())
       .then((data: StarData) => {
         setStarData(data);
