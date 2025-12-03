@@ -39,15 +39,6 @@ export default function Conclusion() {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.8 }}
-            className="mt-6 bg-gray-100 border border-gray-200 rounded-lg px-5 py-3 text-center max-w-xl"
-        >
-            <div className="text-gray-600 text-sm">Lab: Apply to real astronomical data (120k stars)</div>
-        </motion.div>
-        
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
             transition={{ delay: 2.2 }}
             className="mt-4 text-gray-400 font-mono text-xs"
         >
